@@ -1,0 +1,86 @@
+/* CABEÇALHO */
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+    /* tira o sublinhado do link */
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: space-between;
+    /* alinha no sentido do flex */
+    align-items: center;
+    /*sentido contrario do flex*/
+    padding: 0 120px;
+    height: 10vh;
+    /* 10vh -> 10% da visualização na vertical do dispositivo */
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+    /* transforma os textos em maiusculo */
+    font-size: 1em;
+    /* 1em equivale a 16 px */
+    font-weight: 500;
+    /* peso */
+}
+
+/* CONTEUDO PRINCIPAL */
+
+/*primiero banner */
+.banner-principal {
+    color: var(--branco);
+    height: 70vh;
+    background-image: url(../imgs/banner-principal-home.png);
+    /* url -> puxa uma imagem */
+    background-size: cover;
+    /* vai preencher todo o conteudo sem deformar */
+    /* overflow: hidden;  evita que os elementos transbordem */
+
+    display: flex;
+    align-items: center;
+    /* dixa os itens centralizados verticalmente */
+    justify-content: space-between;
+    padding: 0 120px;
+    /* coloca a "margem" */
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* deixa as coisas em colunas (uma em baixo da outra)  */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.texto-banner p {
+    font-size: 1.5em;
+    /* 1,5 * 16px = 24px */
+    width: 50%;
+}
+
+.botao {
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: var(--cor-destaque);
+    color: var(--azul-escuro);
+    font-size: 1, 2em;
+    font-weight: 700;
+}
+
+.banner-principal img
+{
+    align-self: flex-end; /* alinha o proprio elemento ( no caso vai se alinhar na parte de baixo do pai dele */
+    width: 35%;
+}
