@@ -216,3 +216,32 @@ a {
 
     color: var(--branco);
 }
+
+/* top livros recomendados */
+
+.catalogo
+{
+    display: flex;
+    padding: 100px 0;
+    gap: 53px;
+}
+
+.recomendacao
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.recomendacao h3
+{
+     text-transform: uppercase;
+}
+
+.recomendacao:nth-child(1) h3,
+.recomendacao:nth-child(4) h3
+{
+    width: 64%;
+}
