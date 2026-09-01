@@ -15,6 +15,11 @@
     --cor-destaque: #2FD6CB;
 }
 
+html
+{
+    scroll-behavior:smooth;
+}
+
 body
 {
     font-family: "Montserrat", sans-serif;
