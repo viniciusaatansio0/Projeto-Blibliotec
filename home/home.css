@@ -232,35 +232,25 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 200px;
+    gap:20px;
+    text-align: center;
 }
 
 .recomendacao h3
 {
      text-transform: uppercase;
+     font-size: 1em;
+     width: 67%;
 }
 
-.recomendacao:nth-child(1) h3,
-.recomendacao:nth-child(4) h3
+.livro-texto
 {
-    width: 74%;
-}
-
-.recomendacao:nth-child(3) h3
-{
-    width: 50%;
+    font-size: 0,4em;
 }
 
 .recomendacao img
 {
     height: 300px;
-}
-
-.recomendacao h3,
-.recomendacao h4
-{
-    margin-top: 15%;
 }
 
 /* footer */
@@ -305,10 +295,10 @@ a {
     justify-content: space-between;
 }
 
-span
+.linha span
 {
-    height: 4px;
-    width: 4px;
-    background-color: #2ab2ab;
+    height: 1px;
+    width: 1200px;
     background: #2ab2ab;
+    background-color: #2ab2ab;
 }
