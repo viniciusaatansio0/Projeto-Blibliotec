@@ -230,9 +230,10 @@ a {
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 200px;
 }
 
 .recomendacao h3
@@ -243,5 +244,71 @@ a {
 .recomendacao:nth-child(1) h3,
 .recomendacao:nth-child(4) h3
 {
-    width: 64%;
+    width: 74%;
+}
+
+.recomendacao:nth-child(3) h3
+{
+    width: 50%;
+}
+
+.recomendacao img
+{
+    height: 300px;
+}
+
+.recomendacao h3,
+.recomendacao h4
+{
+    margin-top: 15%;
+}
+
+/* footer */
+
+.footer
+{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    height: 40vh;
+}
+
+.container
+{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.informacoes-superiores
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.informacoes
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parte-superior div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+span
+{
+    height: 4px;
+    width: 4px;
+    background-color: #2ab2ab;
+    background: #2ab2ab;
 }
