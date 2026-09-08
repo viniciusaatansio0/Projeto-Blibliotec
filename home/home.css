@@ -1,38 +1,3 @@
-/* CABEÇALHO */
-
-a {
-    color: var(--branco);
-    text-decoration: none;
-    /* tira o sublinhado do link */
-}
-
-.cabecalho {
-    background-color: var(--azul-escuro);
-    display: flex;
-    justify-content: space-between;
-    /* alinha no sentido do flex */
-    align-items: center;
-    /*sentido contrario do flex*/
-    padding: 0 120px;
-    height: 10vh;
-    /* 10vh -> 10% da visualização na vertical do dispositivo */
-}
-
-.navegacao {
-    display: flex;
-    align-items: center;
-
-    gap: 50px;
-}
-
-.navegacao a {
-    text-transform: uppercase;
-    /* transforma os textos em maiusculo */
-    font-size: 1em;
-    /* 1em equivale a 16 px */
-    font-weight: 500;
-    /* peso */
-}
 
 /* CONTEUDO PRINCIPAL */
 
@@ -297,7 +262,7 @@ a {
 
 .linha span
 {
-    height: 1px;
+    height: 4px;
     width: 1200px;
     background: #2ab2ab;
     background-color: #2ab2ab;
