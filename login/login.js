@@ -20,6 +20,4 @@ btnSenha.addEventListener("click", function() {
 
 //campo senha esta recebndo uma pergunta, campo senha é igual a password? se sim ela recebe texto, se não ela recebe password
 CampoSenha.type = CampoSenha.type == "password" ? "text" : "password"
-
-
 }); 
