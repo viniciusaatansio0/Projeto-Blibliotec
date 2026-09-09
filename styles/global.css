@@ -198,7 +198,7 @@ a {
 
     background-color: var(--branco);
 
-    background-image: url(../../imgs/fundo-telas.svg);
+    background-image: url(../imgs/fundo-telas.svg);
 
     background-repeat: no-repeat;
     background-size: 70%;
@@ -241,3 +241,4 @@ a {
     display: flex;
     flex-direction: column;
 }
+
