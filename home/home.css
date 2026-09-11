@@ -385,7 +385,7 @@ footer span {
         /* quebra a pagina quando tem grid */
         /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
         flex-wrap: wrap;
-
+        justify-content: center;
         gap: 40px 20px;
     }
 
@@ -496,7 +496,7 @@ footer span {
     footer {
         padding: 50px 40px;
         font-size: 1.5em;
-        }
+    }
 
     footer .main {
         flex-direction: column;
@@ -512,28 +512,24 @@ footer span {
         gap: 30px;
     }
 
-    .rodape-logos img
-    {
+    .rodape-logos img {
         width: 40%;
     }
 
-    .rodape-informacoes
-    {
+    .rodape-informacoes {
         gap: 30px;
     }
 
-    .rodape-informacoes p
-    {
+    .rodape-informacoes p {
         font-size: 1.5em;
     }
 
-    .rodape-informacoes a, .footer-inferior
-    {
+    .rodape-informacoes a,
+    .footer-inferior {
         font-size: 1.2em;
     }
 
-    .footer span
-    {
+    .footer span {
         margin: 50px 0 30px;
     }
 
@@ -545,4 +541,71 @@ footer span {
     .rodape-icones {
         gap: 20px;
     }
+}
+
+@media(max-width: 500px) {
+    .banner-principal img {
+        width: 70%;
+    }
+
+    .beneficios-lista {
+        grid-template-columns: repeat(3, 65%);
+    }
+
+    .beneficio-icone {
+        width: 35%;
+    }
+
+    .banner-meio
+    {
+        background-position: 40%;
+    }
+
+    /* footer */
+
+    footer .main
+    {
+        gap: 50px;
+    }
+
+    .rodape-informacoes
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .rodape-logos
+    {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .rodape-logos img
+    {
+        width: 100%;
+    }
+
+    .rodape-icones
+    {
+        display: flex;
+        gap: 10px;
+    }
+
+    .rodape-icones img
+    {
+        width: 80%;
+    }
+
+    .footer-inferior
+    {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer
+    {
+        gap: 10px;
+        text-align: left;
+    }
+
 }
