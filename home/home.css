@@ -376,14 +376,12 @@ footer span {
 
     /*acervo */
 
-    .acervo 
-    {
+    .acervo {
         padding: 70px 40px;
         gap: 50px;
     }
 
-    .catalogo
-    {
+    .catalogo {
         /* quebra a pagina quando tem grid */
         /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
         flex-wrap: wrap;
@@ -391,38 +389,31 @@ footer span {
         gap: 40px 20px;
     }
 
-    .recomendacao img
-     {
+    .recomendacao img {
         max-width: 100%;
     }
 
-    .recomendacao h3
-    {
+    .recomendacao h3 {
         font-size: 1.2em;
     }
 
-    .livro-texto
-    {
+    .livro-texto {
         font-size: 1em;
     }
 }
 
-@media(max-width: 768px) 
-{
-    .cabecalho
-    {
+@media(max-width: 768px) {
+    .cabecalho {
         padding: 40px;
         position: relative;
     }
 
-    .botao-menu
-    {
+    .botao-menu {
         /* faz o menu hamburger aparecer novamente */
         display: flex;
     }
 
-    .navegacao
-    {
+    .navegacao {
         background-color: var(--azul-escuro);
         position: absolute;
         /*distancia de 10vh o topo */
@@ -444,6 +435,114 @@ footer span {
         display: none;
     }
 
+    /*elemento com duas classes não tem espaço aqui no css */
+    .navegacao.ativo {
+        display: flex;
+    }
 
+    /*banner principal */
+    .banner-principal {
+        height: 50vh;
+        padding: 30px 0 10px 0;
+        position: relative;
+    }
 
+    .banner-principal .texto-banner {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-principal .texto-banner h1 {
+        font-size: 2em;
+    }
+
+    .banner-principal .texto-banner p {
+        display: none;
+    }
+
+    .banner-principal img {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .banner-principal .botao {
+        padding: 20px 40px;
+        font-size: 1, 2em;
+        z-index: 2;
+    }
+
+    .beneficios-lista {
+        grid-template-columns: repeat(3, 40%);
+
+    }
+
+    .beneficio-icone img {
+        width: 40%;
+    }
+
+    /*banner meio */
+
+    .banner-meio .texto-banner {
+        display: none;
+    }
+
+    /*footer */
+    footer {
+        padding: 50px 40px;
+        font-size: 1.5em;
+        }
+
+    footer .main {
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 50px;
+    }
+
+    .main .rodape-logos {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 30px;
+    }
+
+    .rodape-logos img
+    {
+        width: 40%;
+    }
+
+    .rodape-informacoes
+    {
+        gap: 30px;
+    }
+
+    .rodape-informacoes p
+    {
+        font-size: 1.5em;
+    }
+
+    .rodape-informacoes a, .footer-inferior
+    {
+        font-size: 1.2em;
+    }
+
+    .footer span
+    {
+        margin: 50px 0 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .rodape-icones {
+        gap: 20px;
+    }
 }
