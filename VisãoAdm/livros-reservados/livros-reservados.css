@@ -237,9 +237,11 @@ input[type="checkbox"]:checked::after /*pseudo elemento */
 .aguardando-retirada
 {
     color: #D34A00;
+    text-align: center;
 }
 
 .retirado
 {
     color: #00A223;
+    text-align: center;
 }
