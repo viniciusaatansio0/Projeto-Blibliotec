@@ -19,6 +19,7 @@ checkboxes.forEach((caixinha, indice, lista) => {
             statusRetirada[indice].classList.remove("retirado");
             statusRetirada[indice].classList.add("aguardando-retirada");
             statusRetirada[indice].textContent = "Aguardando retirada";
+            
         }
     })
 });
